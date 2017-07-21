@@ -4,5 +4,5 @@ Build using:
 
 Execute using: 
 
-   curl http://localhost:8080/api/sayHello 
+   curl http://localhost:8080/api/sayHello   ->
    Hello World says - From the Bean! 
