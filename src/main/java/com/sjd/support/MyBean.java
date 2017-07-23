@@ -16,7 +16,7 @@ public class MyBean implements IBean
 
 	public String doSomething ()
 	{
-		return "From the Bean! (" + other.doOther() + ") - meaning of life = " + meaningOfLife;
+		return "From the Bean! (" + other.doOther() + ") - the meaning of life = " + meaningOfLife;
 	}
 
 }
