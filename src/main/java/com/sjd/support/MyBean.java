@@ -1,16 +1,22 @@
 package com.sjd.support;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MyBean implements IBean {
+public class MyBean implements IBean
+{
 
-    @Autowired
-    private IOther other;
+	@Autowired
+	private IOther other;
 
-    public String doSomething () {
-        return "From the Bean! (" + other.doOther() + ")";
-    }
+	@Value("${meaning.of.life:99}")
+	private int meaningOfLife;
+
+	public String doSomething ()
+	{
+		return "From the Bean! (" + other.doOther() + ") - meaning of life = " + meaningOfLife;
+	}
 
 }
